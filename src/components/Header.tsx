@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/90 border-b border-black/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
+      <div className="site-container flex items-center justify-between h-16">
         {/* Logo / Wordmark */}
         <a href="#" className="flex items-center gap-3 group">
           <span className="w-2 h-8 bg-[#FF8C00] block" />
@@ -56,7 +56,7 @@ export default function Header() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-black/10">
-          <nav className="flex flex-col px-6 py-6 gap-5">
+          <nav className="site-container flex flex-col py-6 gap-5">
             {navLinks.map((link) => (
               <a
                 key={link.label}

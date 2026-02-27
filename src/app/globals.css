@@ -10,6 +10,13 @@
   --color-text-muted: #525252;
 }
 
+:root {
+  --header-height: 4rem;
+  --container-max: 80rem;
+  --container-gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --section-space: clamp(4.5rem, 8vw, 7.5rem);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,6 +29,27 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
   color: #000000;
+}
+
+html {
+  scroll-padding-top: calc(var(--header-height) + 1rem);
+}
+
+main {
+  overflow-x: clip;
+}
+
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.site-container {
+  width: min(var(--container-max), calc(100% - (var(--container-gutter) * 2)));
+  margin-inline: auto;
+}
+
+.section-block {
+  padding-block: var(--section-space);
 }
 
 @keyframes marquee {

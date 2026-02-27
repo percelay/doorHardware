@@ -19,7 +19,7 @@ export default function Footer() {
     <footer id="contact" className="bg-black text-white">
       {/* Contact bar */}
       <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-start md:items-center">
+        <div className="site-container py-12 flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-start md:items-center">
           <div>
             <p className="text-xs font-black tracking-[0.3em] uppercase text-[#FF8C00] mb-2">
               Ready to Start Your Project?
@@ -39,7 +39,7 @@ export default function Footer() {
       </div>
 
       {/* Main footer grid */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="site-container py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Col 1: Brand */}
         <div>
           <div className="flex items-center gap-3 mb-6">
@@ -150,7 +150,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-6 flex flex-col md:flex-row justify-between items-center gap-3">
+        <div className="site-container py-6 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-xs text-white/30">
             &copy; {new Date().getFullYear()} Door Hardware, Inc. All rights reserved.
             Established 1909 &mdash; Middlesex County, NJ.

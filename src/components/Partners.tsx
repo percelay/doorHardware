@@ -27,8 +27,8 @@ const brands = {
 
 export default function Partners() {
   return (
-    <section id="partners" className="bg-[#F5F5F5] py-24 px-6 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+    <section id="partners" className="section-block bg-[#F5F5F5]">
+      <div className="site-container">
         {/* Header */}
         <div className="mb-16">
           <p className="text-xs font-black tracking-[0.3em] uppercase text-[#FF8C00] mb-4">
@@ -81,7 +81,8 @@ export default function Partners() {
 
         {/* Bottom note */}
         <p className="text-xs text-[#525252] mt-8 tracking-wide">
-          Our preferred manufacturer relationships ensure preferred pricing, priority fulfillment, and full technical support for your projects.
+          Our preferred manufacturer relationships ensure preferred pricing,
+          priority fulfillment, and full technical support for your projects.
         </p>
       </div>
     </section>
